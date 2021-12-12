@@ -1,0 +1,74 @@
+# Name Plus
+
+[![pub package](https://img.shields.io/pub/v/name_plus.svg?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/name_plus)
+[![Last Commits](https://img.shields.io/github/last-commit/thitlwincoder/name_plus?logo=git&logoColor=white)](https://github.com/thitlwincoder/name_plus/commits/master)
+[![Code size](https://img.shields.io/github/languages/code-size/thitlwincoder/name_plus?logo=github&logoColor=white)](https://github.com/thitlwincoder/name_plus)
+[![License](https://img.shields.io/github/license/thitlwincoder/name_plus?logo=open-source-initiative&logoColor=green)](https://github.com/leisim/thitlwincoder/name_plus/master/LICENSE)
+
+Automatically increment `File` & `Directory` name and create.
+
+## Getting Started
+
+In the `pubspec.yaml` of your flutter project, add the following dependency:
+```dart
+dependencies:
+  name_plus: ^0.0.1
+```
+Next we need to install this
+```dart
+# Dart
+pub get
+
+# Flutter
+flutter packages get
+```
+In your library add the following import:
+```dart
+import 'package:name_plus/name_plus.dart';
+```
+
+## Usage
+
+create `File` with extension
+
+```dart
+File('path').namePlus('filename');
+
+File('path').namePlusSync('filename');
+```
+
+create `Directory` with extension
+
+```dart
+Directory('path').namePlus('filename');
+
+Directory('path').namePlusSync('filename');
+```
+
+## Options 
+
+When creating a `File` or  `Directory`, you can pass some options:
+```dart
+File('path').namePlus(
+'filename',
+format: '(d)', // change increment number format
+space: false, // space between name & number format
+);
+```
+
+## Documentation
+
+Check `test.txt` file name from `example` folder path and then name not exist create `test.txt` or name is already exist create with default format `test 1.txt`
+```dart
+File('example').namePlus('test.txt');
+// test 1.txt
+```
+If you use `format` option, `d` is number place.
+
+```dart
+File('example').namePlus('test.txt', format: '(d)');
+// test (2).txt
+
+File('example').namePlus('test.txt', format: '{d}');
+// test {3}.txt
+```

@@ -1,0 +1,13 @@
+name: name_plus
+description: Automatically increment File & Directory name and create.
+version: 0.0.1
+homepage: https://github.com/thitlwincoder/name_plus
+
+environment:
+  sdk: '>=2.14.4 <3.0.0'
+
+dependencies:
+  path: ^1.8.0
+
+dev_dependencies:
+  lints: ^1.0.0
