@@ -2,8 +2,10 @@
 
 [![pub package](https://img.shields.io/pub/v/name_plus.svg?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/name_plus)
 [![Last Commits](https://img.shields.io/github/last-commit/thitlwincoder/name_plus?logo=git&logoColor=white)](https://github.com/thitlwincoder/name_plus/commits/master)
-[![Code size](https://img.shields.io/github/languages/code-size/thitlwincoder/name_plus?logo=github&logoColor=white)](https://github.com/thitlwincoder/name_plus)
-[![License](https://img.shields.io/github/license/thitlwincoder/name_plus?logo=open-source-initiative&logoColor=green)](https://github.com/leisim/thitlwincoder/name_plus/master/LICENSE)
+[![GitHub repo size](https://img.shields.io/github/repo-size/thitlwincoder/name_plus)](https://github.com/thitlwincoder/name_plus)
+[![License](https://img.shields.io/github/license/thitlwincoder/name_plus?logo=open-source-initiative&logoColor=green)](https://github.com/thitlwincoder/name_plus/blob/master/LICENSE)
+<br>
+[![Uploaded By](https://img.shields.io/badge/uploaded%20by-thitlwincoder-blue)](https://github.com/thitlwincoder)
 
 Automatically increment `File` & `Directory` name and create.
 

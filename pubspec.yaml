@@ -4,10 +4,10 @@ version: 0.0.1
 homepage: https://github.com/thitlwincoder/name_plus
 
 environment:
-  sdk: '>=2.14.4 <3.0.0'
+  sdk: ">=2.19.4 <3.0.0"
 
 dependencies:
-  path: ^1.8.0
+  path: ^1.8.3
 
 dev_dependencies:
-  lints: ^1.0.0
+  lints: ^2.0.1
