@@ -74,3 +74,9 @@ File('example').namePlus('test.txt', format: '(d)');
 File('example').namePlus('test.txt', format: '{d}');
 // test {3}.txt
 ```
+
+## Contribution
+
+Feel free to file an [issue](https://github.com/thitlwincoder/name_plus/issues/new) if you find a problem or make pull requests.
+
+All contributions are welcome :)
