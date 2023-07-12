@@ -19,7 +19,7 @@ extension FileName on File {
     var list = Directory(path).listSync();
 
     // make name list
-    var nameList = list.map((e) => e.absolute.path.split('\\').last).toList();
+    var nameList = list.map((e) => e.absolute.path.split(separator).last).toList();
 
     // get file name
     var fileName = name.substring(0, name.lastIndexOf('.'));

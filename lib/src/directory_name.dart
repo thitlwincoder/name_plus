@@ -27,7 +27,7 @@ extension DirectoryName on Directory {
     var list = Directory(path).listSync();
 
     // make name list
-    var nameList = list.map((e) => e.absolute.path.split('\\').last).toList();
+    var nameList = list.map((e) => e.absolute.path.split(separator).last).toList();
 
     // make val for loop
     var result = name;
