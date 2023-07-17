@@ -9,26 +9,6 @@
 
 Automatically increment `File` & `Directory` name and create.
 
-## Getting Started
-
-In the `pubspec.yaml` of your flutter project, add the following dependency:
-```dart
-dependencies:
-  name_plus: ^0.0.1
-```
-Next we need to install this
-```dart
-# Dart
-pub get
-
-# Flutter
-flutter packages get
-```
-In your library add the following import:
-```dart
-import 'package:name_plus/name_plus.dart';
-```
-
 ## Usage
 
 create `File` with extension
@@ -52,9 +32,9 @@ Directory('path').namePlusSync('filename');
 When creating a `File` or  `Directory`, you can pass some options:
 ```dart
 File('path').namePlus(
-'filename',
-format: '(d)', // change increment number format
-space: false, // space between name & number format
+  'filename',
+  format: '(d)', // change increment number format
+  space: false, // space between name & number format
 );
 ```
 

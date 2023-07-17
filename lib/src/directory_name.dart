@@ -35,7 +35,8 @@ extension DirectoryName on Directory {
     var list = Directory(path).listSync();
 
     // make name list
-    var nameList = list.map((e) => e.absolute.path.split(separator).last).toList();
+    var nameList =
+        list.map((e) => e.absolute.path.split(separator).last).toList();
 
     // make val for loop
     var result = name;
@@ -53,7 +54,9 @@ extension DirectoryName on Directory {
     var list = Directory(path).listSync();
 
     // make name list and it is case-insensitive for windows file systems
-    var nameList = list.map((e) => e.absolute.path.split(separator).last.toLowerCase()).toList();
+    var nameList = list
+        .map((e) => e.absolute.path.split(separator).last.toLowerCase())
+        .toList();
 
     // make val for loop
     var result = name;

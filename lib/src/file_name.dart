@@ -27,7 +27,8 @@ extension FileName on File {
     var list = Directory(path).listSync();
 
     // make name list
-    var nameList = list.map((e) => e.absolute.path.split(separator).last).toList();
+    var nameList =
+        list.map((e) => e.absolute.path.split(separator).last).toList();
 
     // get file name
     var fileName = name.substring(0, name.lastIndexOf('.'));
@@ -55,7 +56,9 @@ extension FileName on File {
 
     // make name list and it is case-insensitive for windows file systems
     // so nameList shoud be compared by lower-case
-    var nameList = list.map((e) => e.absolute.path.split(separator).last.toLowerCase()).toList();
+    var nameList = list
+        .map((e) => e.absolute.path.split(separator).last.toLowerCase())
+        .toList();
 
     // get file name
     var fileName = name.substring(0, name.lastIndexOf('.'));
